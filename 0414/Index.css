@@ -1,0 +1,38 @@
+body{
+  background-color: aquamarine;
+}
+h1, #link1{
+  text-align: center;
+  color: rgb(241, 12, 12);
+  word-spacing: 30px;   /*字间隔*/
+  font-family: "微软雅黑";
+}
+
+#link1 a{
+  text-decoration:none;
+}
+/* a:link {text-decoration:none;} */
+/* a:visited {text-decoration:none;}
+a:hover {text-decoration:underline;}
+a:active {text-decoration:underline;} */
+
+#bg{
+  background-color: wheat;
+  margin: 10px;
+}
+#bg img{
+  float: left;    /*浮动：左边*/
+  margin: 10px;
+} 
+.p1{
+  /* font-style:italic;*/   /*文本斜体显示 */
+  font-style:oblique;    /*文本倾斜显示*/
+  color: rgb(212, 21, 31);
+  text-decoration:underline;  /*装饰下划线*/
+}
+#l{
+  padding: 10px;
+}
+p{
+  color: white;
+}

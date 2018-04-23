@@ -1,0 +1,37 @@
+body{
+  background-color: #00ccff;
+}
+h3, ul{
+  padding: 0px;
+  margin: 20px;
+}
+#div1{
+  padding: 0px;
+  width: 300px;
+  font-size: 15px;
+  background-color: aquamarine;
+}
+#div1 ul{
+  padding: 0px;
+  margin: 0px;
+  list-style-position: inside;
+  list-style-image: url('img/icon.gif');
+  list-style-type: none;
+}
+#div1 li{
+  margin: 5px 0px;
+}
+span{
+  color: #e90f36;
+  padding: 20px;
+}
+#div2{
+  padding: 0px;
+  width: 300px;
+  font-size: 15px;
+  background-color: rgb(127, 221, 19);
+}
+#div2 li{
+  border-bottom: 1px dashed #666666;/*粗细，线条类型*/
+  margin: 12px 0px 0px 0px;   /*上右下左*/
+}

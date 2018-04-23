@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>FlexBox</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js"></script>
+  <style>
+    .flex-container {
+      display: flex;
+      flex-flow: row wrap; /*布局模式：行  包裹内容*/
+      text-align: center;
+    }
+    .flex-container > * {
+      padding: 15px;
+      flex: 1 100%;
+    }
+    .article {
+      text-align: center;
+    }
+    header {
+      background-color: rgb(243, 81, 81);
+    }
+    footer {
+      background-color: rgb(112, 102, 102);
+      color: #ffffff;
+    }
+    .nav {
+      background-color: beige;
+    }
+    .nav ul {
+      list-style: none;
+      padding: 0px;
+    }
+    .nav ul a {
+      text-decoration: none;
+    }
+    @media all and (min-width: 768px) {
+      .nav {
+        text-align: left;
+        flex: 1 auto;
+        order: 1;
+      }
+      .article {
+        flex: 5 0px;
+        order: 2;
+      }
+      footer {
+        order: 3;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <!-- 网页头部-上 -->
+    <header>
+      <h1>City Gallery</h1>
+    </header>
+    <!-- 网页内容导航-左 -->
+    <nav class="nav">
+      <ul>
+        <li><a href="#">AAA</a></li>
+        <li><a href="#">BBB</a></li>
+        <li><a href="#">CCC</a></li>
+        <li><a href="#">DDD</a></li>
+      </ul>
+    </nav>
+    <!-- 网页内容的主要部分-中 -->
+    <article class="article">
+      <h1 id="h1">AAA</h1>
+      <p>qwert yuiop asdf ghjkl zxcvbnm,qwerty uiopas dfghjklz xcvbnm</p>
+      <p>qwertyuio pasdfghjk lzxcvbnm,qwertyubnm,qwertyui opasdfghjkl zxcvbnm</p>
+      <p>qwertyui opasd fghj klzxcv,qwert yuiopasd fghjk lvbnm, </p>
+      <p>qwert yuiopa sdfghjk lzxcvb nmqw ert</p>
+    </article>
+    <!--
+       网页内容底部（显示公司版权信息）-下 
+       &copy;版权   &nbsp;空格   &lt;>  &gt;<
+    -->
+    <footer>
+      Copyr &copy; Newer.com 版权所有 违者必究
+    </footer>
+  </div>
+</body>
+</html> 

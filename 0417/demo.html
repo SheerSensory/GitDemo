@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>html form(表单)</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+  <div>
+    <form action="#" method="POST" name="f" id="f">
+      <!-- 文本框 -->
+      <label for="username" title="用户名">UserName:</label>
+      <input type="text" name="username" placeholder="Your name" size="20" maxlength="10">
+      <input type="text" name="lastname" placeholder="姓" value="Tom"><br>
+
+      <!-- 密码框 -->
+      <label for="password">password:</label>
+      <input type="password" name="password" placeholder="password"><br>
+
+      <!-- 日期选择 -->
+      <label for="birthDate">出生日期:</label>
+      <input type="date" name="birthDate">
+      <input type="datetime-local" name="productDate"><br>
+
+      <!-- 单选按钮 -->
+      <label for="gender">性别:</label>
+      <input type="radio" name="gender" value="male">男
+      <input type="radio" name="gender" value="female" checked>女<br>
+
+      <!-- 复选框 -->
+      <label for="hobby">兴趣爱好:</label>
+      <input type="checkbox" name="hobby" value="read">阅读
+      <input type="checkbox" name="hobby" value="playgame" checked>手游
+      <input type="checkbox" name="hobby" value="swimming">游泳
+      <input type="checkbox" name="hobby" value="movie">电影<br>
+
+      <!-- 数字框 -->
+      <label for="age">年龄:</label>
+      <input type="number" name="age" placeholder="年龄">
+      <input type="number" name="salary" step="0.01" placeholder="薪资"><br>
+
+      <!-- 下拉列表 -->
+      <label for="city">城市:</label>
+      <select name="city">
+      <option value="-1" selected>请选择</option>
+      <option value="1">大长沙</option>
+      <option value="2">洛杉矶</option>
+      <option value="3">纽约</option>
+      </select><br>
+
+      <!-- 多行文本框 -->
+      <label for="remark" id="l1">备注:</label>
+      <textarea name="remark" cols="40" rows="10"></textarea><br>
+
+      <!-- 按键 -->
+      <button type="submit" class="s">确定</button><br>
+      <button type="reset" class="r">重置</button><br>
+      <button type="button">普通按钮</button>
+      <input type="button" value="Click Me...">
+    </form>
+  </div>
+</body>
+</html>
